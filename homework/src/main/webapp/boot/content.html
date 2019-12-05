@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <ul class="nav navbar-nav">
+                <li class=""> <a class="navbar-brand" style="margin: auto" href="">Maizi Admin</a></li>
+                <li class=""><a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-home"></span><span ><label>后台首页</label></span></a></li>
+                <li class=""> <a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-user"></span><span ><label>用户管理</label></span></a></li>
+                <li class="active"><a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-list-alt"></span><span ><label>内容管理</label></span></a></li>
+                <li class=""><a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-tag"></span><span ><label>标签管理</label></span></a></li>
+            </ul>
+            <!--<a class="navbar-brand" style="margin: auto" href="">Maizi Admin</a>
+            <a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-home"></span><span ><label>后台首页</label></span></a>
+            <a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-user"></span><span ><label>用户管理</label></span></a>
+            <a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-list-alt"></span><span ><label>内容管理</label></span></a>
+            <a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-tag"></span><span ><label>标签管理</label></span></a>-->
+        </div>
+
+       <!-- <div class="navbar-right">
+            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-signal" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+        </div>-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="#"> <span><label>admin</label></span><span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+                <li><a href="#"> <span class="glyphicon glyphicon-off"> </span> <span><label> 退出</label></span></a></li>
+
+
+            </ul>
+    </div>
+    </div>
+
+</nav>
+<div class="container">
+    <div class="row">
+       <div class="col-sm-2">
+           <ul class="nav nav-pills nav-stacked">
+               <li role="presentation"><a href="#">内容管理</a></li>
+               <li role="presentation" class="active"><a href="#">添加内容</a></li>
+           </ul>
+       </div>
+        <div class="col-sm-10">
+            <div class="nav-tabs">
+                <h4><strong><span><label for="">内容管理</label></span></strong></h4>
+            </div>
+            <br>
+            <div>
+                <ul class="nav nav-tabs">
+                    <li role="presentation"><a href="#">内容管理</a></li>
+                    <li role="presentation" class=" active"><a href="#">添加内容</a></li>
+                </ul>
+                <br>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">标题</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="请输入文章标题">
+                    </div>
+                    <div class="form-group">
+                        <label >文章内容</label>
+                        <textarea class="form-control" rows="6"></textarea>
+                    </div>
+                    <div class="form-group">
+
+
+                        <div class="form-group">
+                                <input type="checkbox"> 全局置顶
+                            <div class="form-group" style="text-align: right">
+
+                                <button type="submit" class="btn btn-default">发表文章</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zq.dao.PoemDao">
+    <cache type="com.zq.cache.RedisCache"/>
+    <sql id="SELECT_SQL">
+             p.id,
+               p.name,
+               p.author,
+               p.type,
+               p.content,
+               p.href,
+               p.authordes,
+               p.origin,
+               p.categoryid,
+               c.name cname
+    </sql>
+    <resultMap id="sel" type="Poem">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="author" property="author"/>
+        <result column="type" property="type"/>
+        <result column="content" property="content"/>
+        <result column="href" property="href"/>
+        <result column="authordes" property="authordes"/>
+        <result column="origin" property="origin"/>
+        <association javaType="Cate" property="cate">
+            <id column="categoryid" property="id"/>
+            <result column="cname" property="name"/>
+        </association>
+    </resultMap>
+
+    <select id="select" resultMap="sel">
+        select <include refid="SELECT_SQL"/>
+        from t_poem p
+        left join t_category c on p.categoryid = c.id
+    </select>
+
+    <select id="selectAll" resultMap="sel">
+        select <include refid="SELECT_SQL"/>
+        from t_poem p
+        left join t_category c on p.categoryid = c.id
+        <where>
+            <if test="id!=null">
+                id =#{id}
+            </if>
+        </where>
+        limit #{start},#{size}
+    </select>
+
+    <select id="selectSize" resultType="Integer">
+        select count(*)
+        from t_poem
+    </select>
+
+    <delete id="delete">
+        delete
+        from t_poem
+        where id = #{id}
+    </delete>
+
+    <insert id="insert">
+        insert into t_poem
+        values (#{id}, #{name}, #{author}, #{type}, #{content}, #{href}, #{authordes},#{origin},#{cate.id})
+    </insert>
+    <update id="update">
+        update t_poem
+        set name=#{name},
+            author=#{author},
+            type=#{type},
+            content=#{content},
+            href=#{href},
+            authordes=#{authordes},
+            origin=#{origin},
+            categoryid=#{cate.id}
+        where id = #{id}
+    </update>
+</mapper>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+
+            <a class="navbar-brand" style="margin: auto" href="">Maizi Admin</a>
+            <a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-home"></span><span ><label>后台首页</label></span></a>
+            <a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-user"></span><span ><label>用户管理</label></span></a>
+            <a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-list-alt"></span><span ><label>内容管理</label></span></a>
+            <a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-tag"></span><span ><label>标签管理</label></span></a>
+        </div>
+
+       <!-- <div class="navbar-right">
+            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-signal" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+        </div>-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="#"> <span><label>admin</label></span><span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+                <li><a href="#"> <span class="glyphicon glyphicon-off"> </span> <span><label> 退出</label></span></a></li>
+
+
+            </ul>
+    </div>
+    </div>
+
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 ">
+            <div class="page-header">
+                <span><label>客户管理</label> </span>
+            </div>
+            <div >
+                <form class="form-horizontal">
+
+                    <div class="form-group">
+
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputPassword" placeholder="请输入要添加的标签">
+                        </div>
+                        <button type="submit" onclick="tianjia()" class="btn btn-default">添加</button>
+                        <script>
+                            function tianjia(){
+
+                                var t =$('#inputPassword').val();
+                                var div = $("<div />").css({class:"col-sm-2 col-sm-offset-1 alert alert-info alert-dismissible",role:"alert"});
+                                var a =a1;
+                                var span =$("<span />").val(a);
+                                var button=$("<button />").css({type:"button",class:"close",data-dismiss:"alert",aria-label:"Close"}).val(span);
+                                div.append(button);
+                                
+                                console.log(t);
+                            }
+                        </script>
+                    </div>
+                </form>
+            </div>
+            <div class=" col-sm-2 alert alert-info alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                bootstrap
+            </div>
+            <div class=" col-sm-2 col-sm-offset-1 alert alert-info alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                妻子学院
+            </div>
+            <div class=" col-sm-2 col-sm-offset-1  alert alert-info alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                前端课程
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

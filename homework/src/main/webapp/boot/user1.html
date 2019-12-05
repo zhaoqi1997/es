@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+
+            <a class="navbar-brand" style="margin: auto" href="">Maizi Admin</a>
+            <a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-home"></span><span ><label>后台首页</label></span></a>
+            <a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-user"></span><span ><label>用户管理</label></span></a>
+            <a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-list-alt"></span><span ><label>内容管理</label></span></a>
+            <a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-tag"></span><span ><label>标签管理</label></span></a>
+        </div>
+
+       <!-- <div class="navbar-right">
+            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-signal" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+        </div>-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="#"> <span><label>admin</label></span><span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+                <li><a href="#"> <span class="glyphicon glyphicon-off"> </span> <span><label> 退出</label></span></a></li>
+
+
+            </ul>
+    </div>
+    </div>
+
+</nav>
+<div class="container">
+    <div class="row">
+       <div class="col-sm-2">
+           <ul class="nav nav-pills nav-stacked">
+               <li role="presentation"><a href="#">用户管理</a></li>
+               <li role="presentation" class="active"><a href="#">用户搜索</a></li>
+               <li role="presentation"><a href="#">添加用户</a></li>
+           </ul>
+       </div>
+        <div class="col-sm-10">
+            <div class="nav-tabs">
+                <h4><strong><span><label for="">用户管理</label></span></strong></h4>
+            </div>
+            <div>
+                <br>
+                <ul class="nav nav-tabs">
+                    <li role="presentation"><a href="#">用户列表</a></li>
+                    <li role="presentation" class="active"><a href="#">用户搜索</a></li>
+                    <li role="presentation"><a href="#">添加用户</a></li>
+
+                </ul>
+                <div class="panel panel-default">
+                        <!-- Default panel contents -->
+
+                        <div class="panel-body">
+                            <div class="form-group alert alert-info" role="alert">
+                                技巧提示：支持模糊搜索和匹配搜索，匹配搜索使用*代替!
+                            </div>
+                            <form class="">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">用户名</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="请输入用户名">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">UID</label>
+                                    <input type="text" class="form-control"  placeholder="输入用户UID">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">选择用户组</label>
+                                    <select class="form-control">
+                                        <option>限制会员</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-default">提交</button>
+
+                            </form>
+                        </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

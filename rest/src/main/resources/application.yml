@@ -1,0 +1,13 @@
+server:
+  port: 8989
+  servlet:
+    context-path: /rest
+    jsp:
+      init-parameters:
+        development: true
+#    开启jsp的热部署
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp

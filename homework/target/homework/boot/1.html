@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="">BOOT客户端管理系统V2.0</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"> <span class="glyphicon glyphicon-globe" aria-hidden="true"></span><span class="caret"></span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span><span class="caret"></span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span><span class="caret"></span></a></li>
+
+            </ul>
+        </div>
+    </div>
+
+</nav>
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="input-group">
+                <input type="text" class="form-control" id="exampleInputAmount" >
+                <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">客户管理</li>
+                <li class="list-group-item">客户拜访</li>
+                <li class="list-group-item">系统管理</li>
+
+            </ul>
+        </div>
+        <div class="col-sm-9">
+            <div class="page-header">
+                <h1><label>客户管理</label> </h1>
+            </div>
+            <div class="form-group form-group-lg">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label>客户名称</label>
+                    <input type="text" class="form-control"  >
+                </div>
+                <div class="form-group">
+
+                    <label >客户来源</label>
+                    <select  class="form-control multiple">
+                        <option ><label>---请选择---</label></option>
+
+                    </select>
+<!--                    <input type="email" class="form-control"  >-->
+                </div>
+                <div class="form-group">
+                    <label >所属行业</label>
+                    <select  class="form-control input-lg">
+                        <option>---请选择---</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label >客户级别</label>
+                    <select  class="form-control input-lg">
+                        <option>---请选择---</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary active">查询</button>
+            </form>
+            </div>
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">
+                    <label >客户信息列表</label></div>
+                <table class="table table-bordered">
+                    <tr>
+                        <td><label>ID</label></td>
+                        <td><label>客户名称</label></td>
+                        <td><label>客户来源</label></td>
+                        <td><label>客户所属行业</label></td>
+                        <td><label>客户级别</label></td>
+                        <td><label>固定电话</label></td>
+                        <td><label>手机</label></td>
+                        <td><label>操作</label></td>
+                    </tr>
+                    <tr>
+                        <td><label>1</label></td>
+                        <td><label>小黑</label></td>
+                        <td><label>阿里</label></td>
+                        <td><label>互联网</label></td>
+                        <td><label>普通客户</label></td>
+                        <td><label>047900020</label></td>
+                        <td><label>1343434343</label></td>
+                        <td><button type="button" class="btn btn-primary">修改</button><button type="button" class="btn btn-danger">删除</button></td>
+                    </tr>
+                    <tr>
+                        <td><label>1</label></td>
+                        <td><label>小黑</label></td>
+                        <td><label>阿里</label></td>
+                        <td><label>互联网</label></td>
+                        <td><label>普通客户</label></td>
+                        <td><label>047900020</label></td>
+                        <td><label>1343434343</label></td>
+                        <td><button type="button" class="btn btn-primary">修改</button><button type="button" class="btn btn-danger">删除</button></td>
+                    </tr>
+                    <tr>
+                        <td><label>1</label></td>
+                        <td><label>小黑</label></td>
+                        <td><label>阿里</label></td>
+                        <td><label>互联网</label></td>
+                        <td><label>普通客户</label></td>
+                        <td><label>047900020</label></td>
+                        <td><label>1343434343</label></td>
+                        <td><button type="button" class="btn btn-primary">修改</button><button type="button" class="btn btn-danger">删除</button></td>
+                    </tr>
+                    <tr>
+                        <td><label>1</label></td>
+                        <td><label>小黑</label></td>
+                        <td><label>阿里</label></td>
+                        <td><label>互联网</label></td>
+                        <td><label>普通客户</label></td>
+                        <td><label>047900020</label></td>
+                        <td><label>1343434343</label></td>
+                        <td><button type="button" class="btn btn-primary">修改</button><button type="button" class="btn btn-danger">删除</button></td>
+                    </tr>
+                    <tr>
+                        <td><label>1</label></td>
+                        <td><label>小黑</label></td>
+                        <td><label>阿里</label></td>
+                        <td><label>互联网</label></td>
+                        <td><label>普通客户</label></td>
+                        <td><label>047900020</label></td>
+                        <td><label>1343434343</label></td>
+                        <td><button type="button" class="btn btn-primary">修改</button><button type="button" class="btn btn-danger">删除</button></td>
+                    </tr>
+                    <tr>
+                        <td><label>1</label></td>
+                        <td><label>小黑</label></td>
+                        <td><label>阿里</label></td>
+                        <td><label>互联网</label></td>
+                        <td><label>普通客户</label></td>
+                        <td><label>047900020</label></td>
+                        <td><label>1343434343</label></td>
+                        <td><button type="button" class="btn btn-primary">修改</button><button type="button" class="btn btn-danger">删除</button></td>
+                    </tr>
+                </table>
+            </div>
+            <nav aria-label="Page navigation">
+                <ul class="pagination navbar-right" >
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">上一页</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">下一页</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

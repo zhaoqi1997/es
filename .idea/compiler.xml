@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="esday1" />
+        <module name="rest" />
+        <module name="day2" />
+        <module name="homework" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="day2" target="8" />
+      <module name="esday1" target="1.7" />
+      <module name="homework" target="8" />
+      <module name="rest" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="day2" options="-parameters" />
+      <module name="homework" options="-parameters" />
+      <module name="rest" options="-parameters" />
+    </option>
+  </component>
+</project>

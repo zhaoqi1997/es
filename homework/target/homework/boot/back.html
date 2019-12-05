@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/Chart.js"></script>
+    <script>
+
+
+    </script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+
+            <a class="navbar-brand" style="margin: auto" href="">Maizi Admin</a>
+            <a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-home"></span><span ><label>后台首页</label></span></a>
+            <a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-user"></span><span ><label>用户管理</label></span></a>
+            <a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-list-alt"></span><span ><label>内容管理</label></span></a>
+            <a class="navbar-brand" style="margin: auto" href=""><span class="glyphicon glyphicon-tag"></span><span ><label>标签管理</label></span></a>
+        </div>
+
+       <!-- <div class="navbar-right">
+            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-signal" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+        </div>-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="#"> <span><label>admin</label></span><span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+                <li><a href="#"> <span class="glyphicon glyphicon-off"> </span> <span><label> 退出</label></span></a></li>
+
+
+            </ul>
+    </div>
+    </div>
+
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 ">
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p><h4><span style="color: #c9302c"><strong>网站程序有漏洞，急需修复!</strong></span></h4></p>
+                <p><span style="color: #c9302c">当前版本程序(v1.22)存在严重安全问题,容易造成攻击,请即可修复!</span></p>
+                <a class="btn btn-danger active" href="#" role="button">立即修复</a>
+                <a class="btn btn-default" href="#" role="button">稍后处理</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">网站数据统计</div>
+                <!--<div class="panel-body">
+                    <p>...</p>
+                </div>-->
+
+                <!-- List group -->
+                <div class="panel-body">
+                <table class="table">
+                <tr >
+                    <td><span style="text-align: left"><label>统计项目</label></span></td>
+                    <td><span style="text-align: center"><label>今日</label></span></td>
+                    <td><span style="text-align: right"><label>昨日</label></span></td>
+                </tr>
+                    <tr >
+                        <td><span style="text-align: left"><label>注册会员</label></span></td>
+                        <td><span style="text-align: center"><label>200</label></span></td>
+                        <td><span style="text-align: right"><label>400</label></span></td>
+                    </tr>
+                    <tr >
+                        <td><span style="text-align: left"><label>登录会员</label></span></td>
+                        <td><span style="text-align: center"><label>4100</label></span></td>
+                        <td><span style="text-align: right"><label>5112</label></span></td>
+                    </tr>
+                    <tr >
+                        <td><span style="text-align: left"><label>今日发帖</label></span></td>
+                        <td><span style="text-align: center"><label>1540</label></span></td>
+                        <td><span style="text-align: right"><label>4511</label></span></td>
+                    </tr>
+                    <tr >
+                        <td><span style="text-align: left"><label>转载次数</label></span></td>
+                        <td><span style="text-align: center"><label>150</label></span></td>
+                        <td><span style="text-align: right"><label>110</label></span></td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">网站热帖</div>
+                <!--<div class="panel-body">
+                    <p>...</p>
+                </div>-->
+
+                <!-- List group -->
+
+                <table class="table">
+                    <tr >
+                        <td><a href=""><span style="text-align: left"><span class="glyphicon glyphicon-list-alt"></span><label
+                                >泛Mooc职业教育,效果和就业为王</label></span></a></td>
+
+                        <td><a href=""><span style="text-align: right"><label>2015/08/08</label></span></a></td>
+                    </tr>
+                    <tr >
+                        <td><a href=""><span style="text-align: left"><span class="glyphicon glyphicon-list-alt"></span><label
+                        >泛Mooc职业教育,效果和就业为王</label></span></a></td>
+
+                        <td><a href=""><span style="text-align: right"><label>2015/08/08</label></span></a></td>
+                    </tr>
+                    <tr >
+                        <td><a href=""><span style="text-align: left"><span class="glyphicon glyphicon-list-alt"></span><label
+                        >泛Mooc职业教育,效果和就业为王</label></span></a></td>
+
+                        <td><a href=""><span style="text-align: right"><label>2015/08/08</label></span></a></td>
+                    </tr>
+                    <tr >
+                        <td><a href=""><span style="text-align: left"><span class="glyphicon glyphicon-list-alt"></span><label
+                        >泛Mooc职业教育,效果和就业为王</label></span></a></td>
+
+                        <td><a href=""><span style="text-align: right"><label>2015/08/08</label></span></a></td>
+                    </tr>
+                    <tr >
+                        <td><a href=""><span style="text-align: left"><span class="glyphicon glyphicon-list-alt"></span><label
+                        >泛Mooc职业教育,效果和就业为王</label></span></a></td>
+
+                        <td><a href=""><span style="text-align: right"><label>2015/08/08</label></span></a></td>
+                    </tr>
+                    <tr >
+                        <td><a href=""><span style="text-align: left"><span class="glyphicon glyphicon-list-alt"></span><label
+                        >泛Mooc职业教育,效果和就业为王</label></span></a></td>
+
+                        <td><a href=""><span style="text-align: right"><label>2015/08/08</label></span></a></td>
+                    </tr>
+
+                </table>
+
+            </div>
+        </div>
+
+
+
+        </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">今日访客统计</div>
+                <!--<div class="panel-body">
+                    <p>...</p>
+                </div>-->
+
+                <!-- List group -->
+                <div class="panel-body">
+
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                    <script type="text/javascript">
+                        var ctx = $("#myChart").get(0).getContext("2d");
+                        //This will get the first returned node in the jQuery collection.
+                        var myNewChart = new Chart(ctx);
+
+                        var data = {
+                            labels : ["January","February","March","April","May","June","July"],
+                            datasets : [
+                                {
+                                    fillColor : "rgba(220,220,220,0.5)",
+                                    strokeColor : "rgba(220,220,220,1)",
+                                    pointColor : "rgba(220,220,220,1)",
+                                    pointStrokeColor : "#fff",
+                                    data : [65,59,90,81,56,55,40]
+                                },
+                                {
+                                    fillColor : "rgba(151,187,205,0.5)",
+                                    strokeColor : "rgba(151,187,205,1)",
+                                    pointColor : "rgba(151,187,205,1)",
+                                    pointStrokeColor : "#fff",
+                                    data : [28,48,40,19,96,27,100]
+                                }
+                            ]
+                        }
+
+                        Line.defaults = {
+
+                            //Boolean - If we show the scale above the chart data
+                            scaleOverlay : false,
+
+                            //Boolean - If we want to override with a hard coded scale
+                            scaleOverride : false,
+
+                            //** Required if scaleOverride is true **
+                            //Number - The number of steps in a hard coded scale
+                            scaleSteps : null,
+                            //Number - The value jump in the hard coded scale
+                            scaleStepWidth : null,
+                            //Number - The scale starting value
+                            scaleStartValue : null,
+
+                            //String - Colour of the scale line
+                            scaleLineColor : "rgba(0,0,0,.1)",
+
+                            //Number - Pixel width of the scale line
+                            scaleLineWidth : 1,
+
+                            //Boolean - Whether to show labels on the scale
+                            scaleShowLabels : false,
+
+                            //Interpolated JS string - can access value
+                            scaleLabel : "<%=value%>",
+
+                            //String - Scale label font declaration for the scale label
+                            scaleFontFamily : "'Arial'",
+
+                            //Number - Scale label font size in pixels
+                            scaleFontSize : 12,
+
+                            //String - Scale label font weight style
+                            scaleFontStyle : "normal",
+
+                            //String - Scale label font colour
+                            scaleFontColor : "#666",
+
+                            ///Boolean - Whether grid lines are shown across the chart
+                            scaleShowGridLines : true,
+
+                            //String - Colour of the grid lines
+                            scaleGridLineColor : "rgba(0,0,0,.05)",
+
+                            //Number - Width of the grid lines
+                            scaleGridLineWidth : 1,
+
+                            //Boolean - Whether the line is curved between points
+                            bezierCurve : true,
+
+                            //Boolean - Whether to show a dot for each point
+                            pointDot : true,
+
+                            //Number - Radius of each point dot in pixels
+                            pointDotRadius : 3,
+
+                            //Number - Pixel width of point dot stroke
+                            pointDotStrokeWidth : 1,
+
+                            //Boolean - Whether to show a stroke for datasets
+                            datasetStroke : true,
+
+                            //Number - Pixel width of dataset stroke
+                            datasetStrokeWidth : 2,
+
+                            //Boolean - Whether to fill the dataset with a colour
+                            datasetFill : true,
+
+                            //Boolean - Whether to animate the chart
+                            animation : true,
+
+                            //Number - Number of animation steps
+                            animationSteps : 60,
+
+                            //String - Animation easing effect
+                            animationEasing : "easeOutQuart",
+
+                            //Function - Fires when the animation is complete
+                            onAnimationComplete : null
+
+                        }
+
+
+                        new Chart(ctx).PolarArea(data,options);
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading"><label >服务器状态</label></div>
+
+
+                <!-- List group -->
+                <table class="table">
+                    <tr><td><label >内存使用率：40%</label>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                <span class="sr-only">40% Complete (success)</span>
+                            </div>
+                        </div></td></tr>
+                    <tr><td><label>数据库使用率：20%</label>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                <span class="sr-only">20% Complete</span>
+                            </div>
+                        </div></td></tr>
+                    <tr><td><label>磁盘使用率：60%</label>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                <span class="sr-only">60% Complete (warning)</span>
+                            </div>
+                        </div></td>
+                    </tr>
+                    <tr><td><label>CPU使用率：80%</label>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                <span class="sr-only">80% Complete (danger)</span>
+                            </div>
+                        </div></td></tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+</div>
+
+
+
+</body>
+</html>

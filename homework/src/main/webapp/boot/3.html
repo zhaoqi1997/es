@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+
+            <a class="navbar-brand" href="">员工管理系统V1.0</a>
+        </div>
+       <!-- <div class="navbar-right">
+            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-signal" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+        </div>-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="#"> <span><label>欢迎:</label></span><span style="color: #2b669a"><label>小顾</label></span></a></li>
+                <li><a href="#"> <span><label>退出登录</label></span><span class="glyphicon glyphicon-log-out"></span></a></li>
+
+
+            </ul>
+    </div>
+    </div>
+
+</nav>
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-sm-3">
+
+            <!--<ul class="list-group">
+                <li class="list-group-item"><label>用户管理</label></li>
+                <li class="list-group-item"></li>
+                <li class="list-group-item"></li>
+                <li></li>
+            </ul>-->
+            <div class="list-group">
+
+<!--                    <h4 class="list-group-item-heading"><label>用户管理</label></h4>-->
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">用户管理</div>
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item active">用户列表</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            <ul class="list-group ">
+                <li class="list-group-item list-group-item-success"><label>类别管理</label></li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-success"><label>图书管理</label></li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-success"><label>订单管理</label></li>
+            </ul>
+
+        </div>
+        <div class="col-sm-9">
+            <div class="page-header">
+                <h1><label>客户管理</label> </h1>
+            </div>
+            <div>
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class=" active"><a href="#">用户列表</a></li>
+                    <li role="presentation"><a href="#">用户添加</a></li>
+                </ul>
+            </div>
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading center-block">
+                    <div style="margin: auto">
+                    <form class="form-inline" style="text-align: center">
+                        <div class="form-group">
+                            <label>姓名</label>
+                            <input type="text" class="form-control"  >
+                        </div>
+                        <div class="form-group">
+                            <label>手机</label>
+                            <input type="text" class="form-control"  >
+                        </div>
+                        <div class="form-group">
+
+                            <label >激活状态</label>
+                            <select  class="form-control multiple">
+                                <option ><label>---请选择---</label></option>
+
+                            </select>
+                            <!--                    <input type="email" class="form-control"  >-->
+                        </div>
+                        <button type="submit" class="btn btn-primary active">查询</button>
+                    </form>
+                    </div>
+                </div>
+                <table class="table">
+
+                    <tr>
+                        <td><label>ID</label></td>
+                        <td><label>用户名</label></td>
+                        <td><label>密码</label></td>
+                        <td><label>生日</label></td>
+                        <td><label>手机</label></td>
+                        <td><label>状态</label></td>
+                        <td><label>操作</label></td>
+                    </tr>
+                    <tr>
+                        <td><label>1</label></td>
+                        <td><label>张三</label></td>
+                        <td><label>******</label></td>
+                        <td><label>2012/12/24</label></td>
+                        <td><label>1326043xxx3</label></td>
+                        <td><label>冻结</label></td>
+                        <td><button type="button" class="btn btn-primary">修改</button><button type="button" class="btn btn-danger">删除</button></td>
+                    </tr>
+                    <tr>
+                        <td><label>1</label></td>
+                        <td><label>张三</label></td>
+                        <td><label>******</label></td>
+                        <td><label>2012/12/24</label></td>
+                        <td><label>1326043xxx3</label></td>
+                        <td><label>冻结</label></td>
+                        <td><button type="button" class="btn btn-primary">修改</button><button type="button" class="btn btn-danger">删除</button></td>
+                    </tr>
+                    <tr>
+                        <td><label>1</label></td>
+                        <td><label>张三</label></td>
+                        <td><label>******</label></td>
+                        <td><label>2012/12/24</label></td>
+                        <td><label>1326043xxx3</label></td>
+                        <td><label>冻结</label></td>
+                        <td><button type="button" class="btn btn-primary">修改</button><button type="button" class="btn btn-danger">删除</button></td>
+                    </tr>
+                    <tr>
+                        <td><label>1</label></td>
+                        <td><label>张三</label></td>
+                        <td><label>******</label></td>
+                        <td><label>2012/12/24</label></td>
+                        <td><label>1326043xxx3</label></td>
+                        <td><label>冻结</label></td>
+                        <td><button type="button" class="btn btn-primary">修改</button><button type="button" class="btn btn-danger">删除</button></td>
+                    </tr>
+                </table>
+            </div>
+            <nav aria-label="...">
+                <ul class="pager">
+                    <li><a href="#">Previous</a></li>
+                    <li><a href="#">Next</a></li>
+                </ul>
+            </nav>
+            <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p><span style="color: #5cb85c">删除失败!</span></p>
+            </div>
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p><strong><span style="color: #761c19">删除失败!</span></strong><span style="color: #761c19">java.lang.RuntimeException:无效数字.</span></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
